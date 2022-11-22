@@ -1,8 +1,12 @@
 body {
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 a {
     text-decoration: none;
@@ -58,6 +62,46 @@ a {
                 color: black;
                 border-bottom: 1px solid black;
             }
+        }
+    }
+}
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & section {
+        display: grid;
+        grid-column: 2;
+        justify-content: center;
+        height: 21.875rem;
+        margin-top: 5rem;
+    }
+    &-text {
+        font-family: 'Roboto mono', monospace;
+        font-size: 1.875rem;
+        font-weight: 43.75rem;
+        letter-spacing: 0.625rem;
+        color: white;
+        text-align: center;
+    }
+    &-button {
+        font-family: 'Roboto mono', monospace;
+        width: 6.875rem;
+        height: 3.125rem;
+        margin: 0 auto;
+        border-radius: 5px;
+        background: #48cfad;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 3.125rem;
+        &:hover {
+            background-color: #47cfac;
+            transform: scale(1.1);
         }
     }
 }
