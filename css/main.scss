@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
+}
+.home-body {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -103,5 +105,47 @@ a {
             background-color: #47cfac;
             transform: scale(1.1);
         }
+    }
+}
+.blogsMain {
+    display: grid;
+    &__news {
+        background-color: #e6e9ed;
+        padding: 0 50px 40px;
+        &--container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 2fr;
+        }
+        &--img {
+            grid-column: 1;
+            & img {
+                width: 85%; 
+            }
+        }
+        &--containerInfo {
+            grid-column: 2;
+            & p {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    &__posts {
+        padding: 0 50px 40px;
+        & h3 {
+            border-bottom: 1px solid #cdd2da;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+}
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+    &:hover {
+        border: 1px solid white;
+        color: white;
+        background-color: #48cfad;
     }
 }

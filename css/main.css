@@ -2,6 +2,9 @@ body {
   font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
+}
+
+.home-body {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -106,4 +109,48 @@ a {
 .home-main-button:hover {
   background-color: #47cfac;
   transform: scale(1.1);
+}
+
+.blogsMain {
+  display: grid;
+}
+.blogsMain__news {
+  background-color: #e6e9ed;
+  padding: 0 50px 40px;
+}
+.blogsMain__news--container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+.blogsMain__news--img {
+  grid-column: 1;
+}
+.blogsMain__news--img img {
+  width: 85%;
+}
+.blogsMain__news--containerInfo {
+  grid-column: 2;
+}
+.blogsMain__news--containerInfo p {
+  margin-bottom: 35px;
+}
+.blogsMain__posts {
+  padding: 0 50px 40px;
+}
+.blogsMain__posts h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blogs-button {
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.blogs-button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #48cfad;
 }/*# sourceMappingURL=main.css.map */
