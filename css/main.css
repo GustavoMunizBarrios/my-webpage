@@ -159,6 +159,9 @@ a {
 .blogsMain__posts--container img {
   width: 100%;
 }
+.blogsMain__posts--container-title {
+  font-weight: 500;
+}
 .blogsMain__posts--container p {
   margin-bottom: 35px;
 }
