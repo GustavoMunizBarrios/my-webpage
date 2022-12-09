@@ -1,0 +1,21 @@
+@media (max-width: 900px) {
+  .blogsMain__news--container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+  .blogsMain__news--img {
+    grid-row: 2;
+  }
+  .blogsMain__news--containerInfo {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .blogsMain__posts--container {
+    max-width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .blogsMain__posts--container {
+    max-width: 95%;
+  }
+}/*# sourceMappingURL=media-queries.css.map */

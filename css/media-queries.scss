@@ -1,0 +1,30 @@
+@media (max-width: 900px) {
+    .blogsMain {
+        &__news {
+            &--container {            
+                grid-template-columns: 1fr;
+                grid-template-rows: 3fr;
+            }
+            &--img {
+                grid-row: 2;
+            }
+            &--containerInfo {
+                grid-column: 1;
+                grid-row: 3;
+            }
+        }
+        &__posts {
+            //max-width: 45%;
+            &--container {
+                max-width: 45%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .blogsMain__posts--container {
+        max-width: 95%;
+    }
+}
